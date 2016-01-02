@@ -1,0 +1,12 @@
+.dropdown-menu{
+    min-width: 265px;
+}
+.dropdown a{
+    color: white;
+}
+.back-groud-image {
+	background-image:url(../images/background-img.jpg);
+}
+.page-content {
+	padding-top:40px;
+}
