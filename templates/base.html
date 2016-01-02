@@ -37,15 +37,15 @@
             </div>
 
             <div class="col-md-9">
-                <div class="row carousel-holder">
-                    {% block brand_image %}  {% endblock %}
-                </div>
+                {% block brand_image %}  {% endblock %}
+
+                {% block content %} {% endblock %}
             </div>
         </div>
     </div>
     <!-- /.container -->
+    
 
-    {% block content %} {% endblock %}
 
     <div class="container">
         <hr>
