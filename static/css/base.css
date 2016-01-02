@@ -1,11 +1,12 @@
 .dropdown-menu{
     min-width: 265px;
 }
-.dropdown a{
-    color: white;
+
+.main-header{
+    background-color: cadetblue;
 }
-.back-groud-image {
-	background-image:url(../images/background-img.jpg);
+.brands-title{
+    color: cadetblue;
 }
 .page-content {
 	padding-top:40px;
