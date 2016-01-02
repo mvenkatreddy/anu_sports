@@ -18,6 +18,7 @@
     <!-- Custom CSS -->
     <link href="{% static 'css/shop-homepage.css' %}" rel="stylesheet">
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    {% block css %}{% endblock %}
 </head>
 
 <body class="back-groud-image">
@@ -25,8 +26,35 @@
     <nav class="navbar navbar-fixed-top main-header" role="navigation">
         {% include "_navbar.html" %}
     </nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+    <br>    
+    <div class="container extra-links">    
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="header-links">
+                    <a href="/">Home</a>
+                </li>
+                <li class="header-links">
+                    <a href="#">About</a>
+                </li>
+                <li class="header-links">
+                    <a href="{% url 'brands' %}">Brands</a>
+                </li>
+                <li class="header-links">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div class="item">
+            <img class="slide-image" src="{% static 'images/main-page.jpg' %}" alt="" style="height:300px;">
+        </div>
+    </div>
+    </div>
+    <!-- /.navbar-collapse -->
+
     <!-- Page Content -->
-    <div class="container page-content">
+    <div class="container page-content middle-content">
         <div class="row">
             
             <div class="col-md-3">
