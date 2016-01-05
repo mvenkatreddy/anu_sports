@@ -1,0 +1,6 @@
+-r base.txt
+
+static3
+psycopg2
+dj-static
+gunicorn
