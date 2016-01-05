@@ -25,9 +25,9 @@ PROJECT_DIR = os.path.abspath(os.path.join(BASE_DIR, os.pardir))
 SECRET_KEY = 'm7=d(90w4_u3d^-*b_-v7@wh^0y%z^=5jlnf7mw55yra5ocvj9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -124,10 +124,10 @@ STATICFILES_FINDERS = [
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = os.environ.get('gmail_username') # flake8: noqa 
-EMAIL_HOST_PASSWORD = os.environ.get('gmail_password') # flake8: noqa
-EMAIL_PORT = 587
-SERVER_EMAIL = EMAIL_HOST_USER
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = os.environ.get('gmail_username') # flake8: noqa 
+# EMAIL_HOST_PASSWORD = os.environ.get('gmail_password') # flake8: noqa
+# EMAIL_PORT = 587
+# SERVER_EMAIL = EMAIL_HOST_USER
+# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+# EMAIL_USE_TLS = True
