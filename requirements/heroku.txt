@@ -4,3 +4,5 @@ static3
 psycopg2
 dj-static
 gunicorn
+static
+wsgiref
